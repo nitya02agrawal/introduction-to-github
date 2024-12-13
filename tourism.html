@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency - Explore Your Dream Vacation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="logo.png" alt="Travel Agency Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#packages">Vacation Packages</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="hero-image.jpg" alt="Vacation Destinations" class="hero-image">
+        <h1>Discover Your Dream Vacation Today</h1>
+        <button onclick="window.location.href='#packages'">Explore Packages</button>
+    </section>
+
+    <!-- Vacation Packages Section -->
+    <section id="packages">
+        <h2>Our Latest Vacation Packages</h2>
+        <div class="package-card">
+            <img src="package1.jpg" alt="Beach Vacation" class="package-image">
+            <h3>Beach Paradise in Hawaii</h3>
+            <p>Relax on the pristine beaches of Hawaii with a 7-day getaway. Enjoy sunbathing, surfing, and exploring the vibrant culture.</p>
+            <p class="price">$1,299 per person</p>
+            <button onclick="window.location.href='#contact'">Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="package2.jpg" alt="Mountain Adventure" class="package-image">
+            <h3>Mountain Adventure in the Swiss Alps</h3>
+            <p>Embark on a 10-day hiking and skiing adventure in the Swiss Alps. Explore the beautiful mountain scenery and charming villages.</p>
+            <p class="price">$1,899 per person</p>
+            <button onclick="window.location.href='#contact'">Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="package3.jpg" alt="European Tour" class="package-image">
+            <h3>European Grand Tour</h3>
+            <p>Explore Europe's top destinations with a 14-day guided tour. Visit cities like Paris, Rome, and Barcelona.</p>
+            <p class="price">$2,499 per person</p>
+            <button onclick="window.location.href='#contact'">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Customers Are Saying</h2>
+        <div class="testimonial">
+            <p>"The Hawaiian beach package was a dream come true. Everything was perfect, from the beaches to the hotel. Highly recommend!"</p>
+            <h4>– Sarah J.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"The Swiss Alps adventure was breathtaking. I enjoyed every moment of the trip, from the skiing to the cozy chalet."</p>
+            <h4>– Mark T.</h4>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: contact@travelagency.com</p>
+        <div class="social-links">
+            <a href="https://facebook.com/travelagency">Facebook</a>
+            <a href="https://instagram.com/travelagency">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
